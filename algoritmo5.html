@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo5</title>
+</head>
+<body bgcolor="E0E0E0">
+    <p><a href="index.html">Regresar al menu </a></p>
+    Calcular valor de Pi.<br>
+    <label for="iterations">Numero de iteraciones:</label>
+    <input type="number" id="iterations" min="1">
+    <button onclick="calculaPi()">Calcular Pi</button>
+
+    <p id="salida"></p>
+    <p id="pi-resultado"></p>
+
+    <script>
+        function calculaPi() {
+            const iterations = parseInt(document.getElementById('iterations').value);
+            let control = false;
+            let resultado = 0.0;
+            let salida = "π = 4.0 ( ";
+
+            if (iterations > 0) {
+                for (let i = 1; i < iterations * 2; i += 2) {
+                    if (control) {
+                        if (i < iterations * 2 - 1) {
+                            salida += `1/${i} + `;
+                        } else {
+                            salida += `1/${i}`;
+                        }
+                        resultado -= 1.0 / i;
+                        control = false;
+                    } else {
+                        if (i < iterations * 2 - 1) {
+                            salida += `1/${i} - `;
+                        } else {
+                            salida += `1/${i}`;
+                        }
+                        resultado += 1.0 / i;
+                        control = true;
+                    }
+                }
+                salida += " )";
+                document.getElementById("salida").innerHTML = salida;
+                document.getElementById("pi-resultado").innerHTML = "π = " + (4 * resultado);
+            } else {
+                document.getElementById("salida").innerHTML = "Error: Introduzca un numero valido de iteraciones.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesión de Fibonacci</title>
+</head>
+<body bgcolor="E0E0E0">
+    <p><a href="index.html">Regresar al menu </a> <br></p>
+    <p>Sucesión de Fibonacci</p>
+    <label for="limite">Límite:</label>
+    <input type="number" id="limite" min="1">
+    <button onclick="calculaFibonacci()">Mostrar Sucesión</button>
+
+    <p id="sucesion"></p>
+
+    <script>
+        function calculaFibonacci() {
+            const limite = parseInt(document.getElementById('limite').value);
+            let x = 0;
+            let y = 1;
+            let sucesion = "La sucesión es: ";
+
+            if (limite > 0) {
+                for (let i = 0; i < limite; i++) {
+                    sucesion += x + (i < limite - 1 ? ", " : "");
+                    let z = x;
+                    x = y;
+                    y = y + z;
+                }
+                document.getElementById("sucesion").innerHTML = sucesion;
+            } else {
+                document.getElementById("sucesion").innerHTML = "Error: Introduzca un número válido.";
+            }
+        }
+    </script>
+</body>
+</html>

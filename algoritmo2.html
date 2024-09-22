@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cubo(){
+            if(!isNaN(document.getElementById("num").value) && (document.getElementById("num").value) > 1 ){
+            var naturales = parseInt(document.getElementById("num").value);
+            var resultado = "Resultado <br>";
+
+            for (let i = 1; i <= naturales; i++){
+                if (i % 2 == 0){
+                resultado += `${i} al cubo es: ${i*i*i}<br>`;
+                }
+            }
+            document.getElementById("out").innerHTML= resultado;
+        }else{
+            document.getElementById("out").innerHTML= "El valor ingresado debe ser numerico y mayor a 1";
+        }
+        }
+    </script>
+</head>
+<body>
+    <p><a href="index.html">Regresar al menu</a><br></p>
+    Escribir un programa que muestre en pantalla los cinco primeros numeros naturales pares elevados al cubo<br>
+    Ejemplo:<br>
+    2 al cubo es 8  <br>
+    4 al cubo es 64 <br>
+    6 al cubo es ... <br>
+    8 al cubo es ... <br>
+    100 al cubo es ... <br>
+    Cantidad es numeros naturales pares: <input type="text" value="20" id="num"><br>
+    <input type="button" value="Calcular" onclick="cubo()"><br>
+    <p id="out">Resultado</p>
+
+    
+</body>
+</html>
