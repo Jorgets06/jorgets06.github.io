@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglo 2</title>
+    <script src="Arreglo2of.js"></script>
+</head>
+<body onload="aleatorios()">
+    <h1>Arreglos 2</h1>
+    <p>Capture un arreglo de 10 elementos de tipo entero, imprima el arreglo de
+     forma vertical y horizontal, imprima el arreglo de forma ascendente y 
+     descendente, encuentre el elemento menor, el mayor, la suma, 
+     el promedio o media, la mediana y la noda.</p>
+
+     <p style="display: inline;" id="contador">Elemento[0]:</p>
+     <input type="number" id="elementoInput">
+     <input type="button" value="Capturar" id="capturarBoton" onclick="Capturar();">
+     <input type="button" value="Reiniciar" onclick="reiniciar()">
+     <input type="button" value="Generar resultados" id="generarBoton" onclick="calcular()" disabled>
+     <br><br><p id="resultados"></p>
+     <br><table border="2" style="border-collapse:collapse;">
+        <tr id="RenglonIndice"></tr>
+        <tr id="RenglonDato"></tr>
+     </table>
+     <br>
+     <table id="TablaVertical" border="2" style="border-collapse:collapse;"></table>
+
+</body>
+</html>
