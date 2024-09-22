@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo 3</title>
+    <script src="Arreglo3of.js"></script>
+</head>
+<body bgcolor="#E0E0E0" onload="Generar()">
+    <a href="index.html"><button>Regresar al menu</button></a><br>
+    <h1>Cuadrado Magico</h1>
+    <p>Los cuadrados mágicos, son un conjunto de números enteros diferentes colocados en las casillas de un cuadrado y que se caracterizan porque la suma de sus filas, columnas y diagonales principales es siempre la misma, el valor de la suma es denominado Constante mágica del Cuadrado.
+    <br>
+    <br>Seleccione el tamaño del cuadrado:
+    <select id="lados" onchange="Generar()">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <input type="button" value="Generar" onclick="Generar()">
+    <input type="button" value="Calcular" onclick="Calcular()">
+    <input type="button" value="Ejemplo de Cuadrado" onclick="EjemploCuadrado()">
+    <input type="button" value="Ejemplo de Cuadrado magico" onclick="EjemploMagico()">
+    <table border="0.5" id="cuadrado" style="border-collapse: collapse;"></table>
+    <h1 id="verificar" style="color: crimson;">No es cuadrado magico</h1>
+</body>
+</html>
+
