@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo</title>
+    <style>
+        h1{
+            font-family:  Arial, Helvetica, sans-serif;
+        }
+        .imagen {
+            width: 170px;
+            height: 170px;
+            border-radius: 20px;
+        }
+        table{
+            background-color:slategrey;
+            border-radius: 20px;
+        }
+      
+    </style>
+    <script src="Memo of.js"> </script>
+</head>
+<body bgcolor="#E0E0E0" onload="Revolver();Fondo();"> 
+    <a href="index.html"><button>Regresar al menu</button></a><br>
+    <h1 align="center">MEMORAMA</h1>
+    <table align="center" id="tabla">
+        <tr>
+            <td><img src="llanta.png" alt="" id="0" class="imagen" onclick="cambiarImagen(this,0)"></td>
+            <td><img src="llanta.png" alt="" id="1" class="imagen" onclick="cambiarImagen(this,1)"></td>
+            <td><img src="llanta.png" alt="" id="2" class="imagen" onclick="cambiarImagen(this,2)"></td>
+            <td><img src="llanta.png" alt="" id="3" class="imagen" onclick="cambiarImagen(this,3)"></td>
+        </tr>
+        <tr>
+            <td><img src="llanta.png" alt="" id="4" class="imagen" onclick="cambiarImagen(this,4)"></td>
+            <td><img src="llanta.png" alt="" id="5" class="imagen" onclick="cambiarImagen(this,5)"></td>
+            <td><img src="llanta.png" alt="" id="6" class="imagen" onclick="cambiarImagen(this,6)"></td>
+            <td><img src="llanta.png" alt="" id="7" class="imagen" onclick="cambiarImagen(this,7)"></td>
+        </tr>
+        <tr>
+            <td><img src="llanta.png" alt="" id="8" class="imagen" onclick="cambiarImagen(this,8)"></td>
+            <td><img src="llanta.png" alt="" id="9" class="imagen" onclick="cambiarImagen(this,9)"></td>
+            <td><img src="llanta.png" alt="" id="10" class="imagen" onclick="cambiarImagen(this,10)"></td>
+            <td><img src="llanta.png" alt="" id="11" class="imagen" onclick="cambiarImagen(this,11)"></td>
+        </tr>
+        <tr>
+            <td><img src="llanta.png" alt="" id="12" class="imagen" onclick="cambiarImagen(this,12)"></td>
+            <td><img src="llanta.png" alt="" id="13" class="imagen" onclick="cambiarImagen(this,13)"></td>
+            <td><img src="llanta.png" alt="" id="14" class="imagen" onclick="cambiarImagen(this,14)"></td>
+            <td><img src="llanta.png" alt="" id="15" class="imagen" onclick="cambiarImagen(this,15)"></td>
+        </tr>
+    </table>
+    <h1 align="center" id="contador">Pares Encontrados: 0</h1>
+    <center><input type="button" value="Reiniciar" onclick="Reiniciar()"></center>
+    <p id="Salida"></p>
+</body>
+</html>
