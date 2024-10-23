@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilas</title>
+    <link rel="stylesheet" href="pcss.css">
+    <script src="of.js"></script>
+</head>
+<body bgcolor="#E0E0E0" onload="Aleatorias()">
+    <a href="index.html" class="back-button"><button>Regresar al menu </button></button></a>
+    <h1 align="center">Pila generica</h1>
+    <p>Aplicacion que muestra un objeto tipo pila, e implementa los metodos Push, Pop, Peek,
+    Clear, Find, isEmpty</p> 
+    <br>Elemento: <input type = "text" id ="Elemento" onkeyup="CambioTexto()">
+    <input type="button" value="Push()" id="iPush" onclick="Push(); Aleatorias();">
+    <input type="button" value="Pop()" id="iiPop" onclick="Pop()">
+    <input type="button" value="Peek()" id="iPeek" onclick="Peek()"> 
+    <input type="button" value="Clear()" id="iClear" onclick="Clear()">
+    <input type="button" value="Find()" id="iFind" onclick="Find()">
+    <input type="button" value="isEmpty()" id="iEmpty" onclick="isEmpty()">
+    <table>
+        <tbody id="tabla"></tbody>
+    </table>
+    <img src="pila.jpg" alt="Imagen de pila">
+    <h3 id="mensaje"></h3>
+</body>
+</html>

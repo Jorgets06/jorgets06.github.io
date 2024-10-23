@@ -1,0 +1,28 @@
+h1{
+        
+    top: 20px;
+    left: 800px;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+p, #mensaje{
+    top: 20px;
+    left: 800px;
+    font-family:  Arial, Helvetica, sans-serif;  
+}
+table, tr, td{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mensaje{
+    font-family: Arial, Helvetica, sans-serif;
+    top: 70%;
+    left: 75%;
+    color: red;
+}
+img{
+    position: fixed;
+    top: 150px;
+    right: 20px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
