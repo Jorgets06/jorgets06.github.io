@@ -1,30 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidad didactica 1 introducció n a los algoritmos y estructuras de datos</title>
+    <title>Mercury - Documentación</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 12px;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+        }
+        h1:hover {
+            color: #2980b9;
+            border-bottom-color: #2980b9;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 22px;
+            transition: all 0.3s ease;
+        }
+        .point {
+            background-color: #f8fafc;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .point:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background-color: #fff;
+            border-left-width: 6px;
+        }
+        .point:hover h2 {
+            color: #1a5276;
+            padding-left: 5px;
+        }
+        .note {
+            background-color: #e8f4fc;
+            border-left: 4px solid #0288d1;
+            padding: 12px 15px;
+            margin: 15px 0;
+            font-style: italic;
+            border-radius: 0 5px 5px 0;
+            transition: all 0.3s ease;
+        }
+        .note:hover {
+            background-color: #d4e6f7;
+        }
+        .code {
+            background-color: #f1f5f9;
+            border: 1px solid #dbe4ed;
+            padding: 12px;
+            font-family: 'Consolas', monospace;
+            border-radius: 6px;
+            margin: 12px 0;
+            overflow-x: auto;
+            transition: all 0.3s ease;
+        }
+        .code:hover {
+            background-color: #e3ebf3;
+            border-color: #c8d6e5;
+        }
+        .author {
+            color: #5d6d7e;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        .author:hover {
+            color: #3498db;
+        }
+        .image-container {
+            margin: 18px 0;
+            text-align: center;
+            background-color: #f1f5f9;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px dashed #a4b7c6;
+            transition: all 0.3s ease;
+        }
+        .image-container:hover {
+            background-color: #e3ebf3;
+            border-color: #7f8c8d;
+            transform: scale(1.01);
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .image-container:hover img {
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+        p {
+            margin: 10px 0;
+            transition: all 0.3s ease;
+        }
+        .point:hover p {
+            color: #2c3e50;
+        }
+    </style>
 </head>
-<body bgcolor="E0E0E0">
-    <h1>Unidad didactica 1 introducción a los algoritmos y estructuras de datos</h1>
-    <p>Definición de algoritmo <br> Conjunto ordenado y finito de operaciones que permite hallar la solucion a un problema.</p>
-    <p><a href="Act1.html">Ejemplo 1 </a><br></p>
-    <p><a href="algoritmo2.html">Ejemplo 2 </a><br></p>
-    <p><a href="algoritmo3.html">Ejemplo 3 </a><br></p>
-    <p><a href="algoritmo4.html">Ejemplo 4 </a><br></p>
-    <p><a href="algoritmo5.html">Ejemplo 5 </a><br></p>
-    <p>Arreglos<br> Los arreglos en programación son esructuras de datos que permiten tener varios datos al mismo tiempo.</p>
-    <p><a href="Arreglo2.html">Ejemplo 1 </a><br></p>
-    <p><a href="Arreglo3.html">Ejemplo 2 </a><br></p>
-    <p><a href="23.html">Memorama </a><br></p>
-    <p><a href="Tic tac toe.html">Tic Tac Toe </a><br></p>
-    <p>Pilas<br> Una pila (stack en inglés) es una lista ordenada o estructura de datos que permite almacenar y recuperar datos.</p>
-    <p><a href="Pilas.html">Programa Pila </a><br></p>
-    <p><a href="nose.html">Programa Postfijas </a><br></p>    
-    <p>Cifrado de Cesar<br>Metodo de cifrado que consiste en reemplazar cada letra de un texto por otra que se encuentra un número fijo de posiciones más adelante en el alfabeto.</p>
-    <p><a href="cesar.html">Cifrado de Cesar I </a><br></p>
-    <p><a href="CesarDesc.html">Cifrado de Cesar II </a><br></p>
-    <p>Listas<br>Una lista es una estructura de datos que representa una secuencia de datos ordenada de valores, donde los mismos valores pueden repetirse.</p>
-    <p><a href="ListaGenerica.html">Lista Generica</a><br></p>
+<body>
+    <div class="container">
+        <h1>- Actividad 8: Mercury -</h1>
+        <p class="author">Jorge Emilio Terrazas Serna</p>
+        
+        <p>Mercury es un servidor de correo electrónico diseñado específicamente para sistemas Windows. Desarrollado por David Harris, proporciona soporte para el envío y la recepción de correos mediante protocolos estándar como SMTP, POP3 e IMAP. Su arquitectura lo hace especialmente adecuado para su uso en redes pequeñas o medianas, donde se requiere una solución de correo local confiable y configurable.</p>
+        
+        <div class="point">
+            <h2>Localización del servidor</h2>
+            <div class="image-container">
+                <img src="1.jpg" alt="Captura del directorio donde se encuentra mercury.exe">
+            </div>
+        </div>
+        
+        <div class="point">
+            <h2>Ayuda del servidor</h2>
+            <div class="image-container">
+                <img src="image2.png" alt="Mensaje de error al acceder a la ayuda">
+            </div>
+        </div>
+        
+        <div class="point">
+            <h2>Configuración de forma gráfica</h2>
+            <div class="image-container">
+                <img src="3.jpg" alt="Interfaz gráfica de configuración de Mercury">
+            </div>
+        </div>
+        
+        <div class="point">
+            <h2>Archivo de configuración</h2>
+            <div class="image-container">
+                <img src="4.jpg" alt="Contenido del archivo mercury.ini">
+            </div>
+            <div class="code">comando: more mercury.ini</div>
+        </div>
+        
+        <div class="point">
+            <h2>Prendido del servidor mediante XAMPP</h2>
+            <div class="image-container">
+                <img src="5.jpg" alt="Panel de control de XAMPP mostrando Mercury">
+            </div>
+        </div>
+        
+        <div class="point">
+            <h2>Apagado mediante XAMPP</h2>
+            <div class="image-container">
+                <img src="6.jpg" alt="Deteniendo Mercury desde XAMPP">
+            </div>
+        </div>
+        
+        <div class="point">
+            <h2>Prendido mediante CMD</h2>
+            <div class="image-container">
+                <img src="7.jpg" alt="Iniciando Mercury desde línea de comandos">
+            </div>
+            <div class="code">mercury_start.bat</div>
+        </div>
+        
+        <div class="point">
+            <h2>Apagado mediante CMD</h2>
+            <div class="image-container">
+                <img src="8.jpg" alt="Deteniendo Mercury desde línea de comandos">
+            </div>
+            <div class="code">mercury_stop.bat</div>
+        </div>
+    </div>
 </body>
 </html>
