@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #e6e9ec;
+    color: #1c3a52;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 5px;
+    color: #1a5276;
+}
+
+.autor {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #2e86c1;
+    font-weight: 600;
+}
+
+/* TABLERO */
+table {
+    border-collapse: collapse;
+    margin: auto;
+    box-shadow: 0 10px 25px rgba(26, 82, 118, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #2e86c1;
+}
+
+td {
+    width: 65px;
+    height: 65px;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* COLORES TABLERO */
+:root {
+  --color-celda1: #d6eaf8;
+  --color-celda2: #5dade2;
+}
+
+tr:nth-child(even) td:nth-child(even),
+tr:nth-child(odd) td:nth-child(odd) {
+  background-color: var(--color-celda1);
+}
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+  background-color: var(--color-celda2);
+}
+
+/* HOVER CRUZ */
+.hover {
+    background-color: rgba(41, 128, 185, 0.6) !important;
+}
+
+/* BLOQUEADAS */
+.bloqueada {
+    background-color: rgba(52, 73, 94, 0.35) !important;
+    pointer-events: none;
+}
+
+/* CONTROLES */
+select, input[type="color"], button {
+    margin: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #aed6f1;
+    font-size: 14px;
+}
+
+label {
+    color: #1a5276;
+    font-weight: 600;
+}
+
+/* BOTONES */
+button {
+    background: #2e86c1;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+}
+
+button:hover {
+    background: #1b4f72;
+    transform: scale(1.05);
+}
+
+/* PANEL */
+.controls {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(26, 82, 118, 0.15);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocho Reinas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="functions.js" defer></script>
+</head>
+
+<body>
+
+<h2>Problema de las 8 Reinas</h2>
+<p class="autor">Jorge Emilio Terrazas Serna - 223200677</p>
+
+<table id="tablero">
+    <tbody>
+        <!-- Generamos 8x8 -->
+        <script>
+            for (let i = 0; i < 8; i++) {
+                document.write("<tr>");
+                for (let j = 0; j < 8; j++) {
+                    document.write(`<td onclick="cellClick(this)" 
+                                    onmouseover="hoverCelda(this)" 
+                                    onmouseleave="limpiarHover()"></td>`);
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </tbody>
+</table>
+
+<br>
+
+<label>Tipo de reina:</label>
+<select id="tipoReina">
+    <option value="♕">Clásica</option>
+    <option value="👑">Corona</option>
+    <option value="♛">Negra</option>
+</select>
+
+<br><br>
+
+<label>Celda clara:</label>
+<input type="color" id="color1" value="#f5f5dc">
+
+<label>Celda oscura:</label>
+<input type="color" id="color2" value="#deb887">
+
+<br><br>
+
+<button onclick="reiniciar()">Reiniciar</button>
+<button onclick="mostrarSolucion(0)">Solución 1</button>
+<button onclick="mostrarSolucion(1)">Solución 2</button>
+<button onclick="mostrarSolucion(2)">Solución 3</button>
+
+</body>
+</html>
